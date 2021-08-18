@@ -40,7 +40,7 @@ Structure in the repository:
 ~~~
 ## GAN
 
-Two architecures were used for character generation: DCGAN (Deep Convolutional GAN) and R1GAN (R1 Regularizer GAN), both gae impressive results and fake images were similar to real ones.
+Two architecures were used for character generation: DCGAN (Deep Convolutional GAN) and R1GAN (R1 Regularizer GAN), both of them gave impressive results and fake images were similar to real ones.
 
 ### DCGAN
 
