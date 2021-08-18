@@ -16,7 +16,7 @@ Classifying anime girls' eyes and hair using CNN (Convolutional Neural Network)
 
 There are 10 colors for eyes and 12 for hair, counting up 22 features in total.
 
-The CNN was used to build the classyfing model for detecting colors of eyes and hair, working with 99% accuracy on test dataset.
+The CNN was used to build the classyfing model for detecting colors of eyes and hair, working with 98% accuracy on test dataset.
 
 #### Examples of color detection
 
@@ -24,7 +24,25 @@ The CNN was used to build the classyfing model for detecting colors of eyes and 
 
 #### Classifier error over training iterations
 
-<img src="img/classifier_error.png" alt="error" width="400"/>
+<img src="img/classifier_error.png" alt="error" width="700"/>
+
+#### Accuracy on test dataset
+
+~~~
+Average accuracy on test dataset: 98.43064880371094%
+Accuracy on test dataset (eyes): 97.98519897460938%
+Average accuracy on test dataset (hair): 98.8760986328125%
+~~~
+
+<img src="img/acc_eyes.png" alt="acc eyes" width="700"/>
+<br>
+<img src="img/acc_hair.png" alt="acc hair" width="700"/>
+
+#### Examples of incorrect classifier guesses
+
+<img src="img/incorrect1.png" alt="incorrect" width="400" height="400"/>
+<img src="img/incorrect2.png" alt="incorrect" width="400" height="400"/>
+<img src="img/incorrect3.png" alt="incorrect" width="400" height="400"/>
 
 
 Structure in the repository:
@@ -36,7 +54,7 @@ Structure in the repository:
                |-data-|                        # Folder with the dataset, it's not included in the repo
                |      |-...
                |-state_dicts-|
-                             |-classifier.w    # State dist for ConvNet model
+                             |-classifier.w    # State dict for ConvNet model
 ~~~
 ## GAN
 
@@ -65,8 +83,8 @@ Structure in the repository:
                 |-data-|                        # Folder with the dataset, it's not included in the repo
                 |      |-...
                 |-state_dicts-|
-                              |-dcgan_aniD.w    # State dist for Discriminator model
-                              |-dcgan_aniG.w    # State dist for Generator model
+                              |-dcgan_aniD.w    # State dict for Discriminator model
+                              |-dcgan_aniG.w    # State dict for Generator model
 ~~~
 
 ### R1GAN
@@ -91,8 +109,8 @@ Structure in the repository:
                 |-data-|                        # Folder with the dataset, it's not included in the repo
                 |      |-...
                 |-state_dicts-|
-                              |-r1gan_aniD.w    # State dist for Discriminator model
-                              |-r1gan_aniG.w    # State dist for Generator model
+                              |-r1gan_aniD.w    # State dict for Discriminator model
+                              |-r1gan_aniG.w    # State dict for Generator model
 ~~~
 
 
