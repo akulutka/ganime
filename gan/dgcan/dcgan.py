@@ -71,9 +71,10 @@ class Anime_Dataset:
         print(len(self.labels), len(self.img_files))
     
     def color_transform(self, x):
-        x = F.adjust_saturation(x, 2.5)
+        x = F.adjust_saturation(x, 1.75)
         x = F.adjust_gamma(x, 0.7)
-        x = F.adjust_contrast(x, 1.2)
+        x = F.adjust_contrast(x, 0.8)
+        x = F.adjust_brightness(x, 0.75)
         return x
         
     def __len__(self):

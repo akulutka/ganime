@@ -35,9 +35,10 @@ class Anime_Dataset:
         print(len(self.labels), len(self.img_files))
     
     def color_transform(self, x):
-        x = torchvision.transforms.functional.adjust_saturation(x, 2.5)
+        x = torchvision.transforms.functional.adjust_saturation(x, 2.75)
         x = torchvision.transforms.functional.adjust_gamma(x, 0.7)
-        x = torchvision.transforms.functional.adjust_contrast(x, 1.2)
+        x = torchvision.transforms.functional.adjust_contrast(x, 0.8)
+        x = torchvision.transforms.functional.adjust_brightness(x, 0.75)
         return x
         
     def __len__(self):
