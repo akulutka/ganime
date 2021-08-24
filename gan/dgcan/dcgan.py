@@ -8,10 +8,10 @@ import torch.optim as optim
 import torch.utils.data
 from torch.utils.data import DataLoader
 from torchvision import transforms
-import torchvision.utils as vutils
 import torchvision.transforms as transforms
 from torchvision.transforms import functional as F
-import numpy as np
+
+from PIL import Image
 
 manualSeed = 999
 
