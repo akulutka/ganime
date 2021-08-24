@@ -113,6 +113,31 @@ Structure in the repository:
                               |-r1gan_aniG.w    # State dict for Generator model
 ~~~
 
+## Scores
+
+Inception Score (IS) and Fréchet Inception Distance (FID) were implemented on own Classifier for scoring the quality of generated images.
+
+<center>
+
+### Inception Score
+
+|     *Data*    |   *Eyes*  |   *Hair*   |
+|:-------------:|:---------:|:----------:|
+|     DCGAN     |   4.400   |    5.430   |
+|     R1GAN     |   5.747   |    7.198   |
+| **Real Data** | **9.855** | **11.459** |
+
+
+### Fréchet Inception Distance
+
+| *Data* | *Eyes* | *Hair* |
+|:------:|:------:|:------:|
+|  DCGAN |  0.346 |  0.283 |
+|  R1GAN |  0.200 |  0.171 |
+
+</center>
+
+A notebook fot score counting in included in the `/scores/` directory.
 
 ## Credits
 
