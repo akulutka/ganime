@@ -146,3 +146,8 @@ The dataset and data loading source code was provided by [Brian Chao](https://gi
 DCGAN architecture was provided by [PyTorch Tutorials](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html).
 
 R1GAN architecture was provided by [Jinhyeok Yang](https://github.com/Yangyangii/GAN-Tutorial/blob/master/CelebA/R1GAN.ipynb).
+
+Inception Score was introduced in [Improved Techniques for Training GANs](https://arxiv.org/pdf/1606.03498.pdf) article, section 4.
+
+Fréchet Inception Distance was introduces in [GANs Trained by a Two Time-Scale Update RuleConverge to a Local Nash Equilibrium](https://arxiv.org/pdf/1706.08500.pdf) article, section A1.
+The code for FID calculation in PyTorch was developed by [mseitzer](https://github.com/mseitzer/pytorch-fid)
