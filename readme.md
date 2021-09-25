@@ -137,7 +137,7 @@ Inception Score (IS) and Fréchet Inception Distance (FID) were implemented on 
 
 </center>
 
-A notebook fot score counting in included in the `/scores/` directory.
+A notebook for score counting in included in the `/scores/` directory.
 
 ## Credits
 
